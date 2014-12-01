@@ -2,7 +2,7 @@
     session_start();
     $loginid = $_POST['loginid'];
     $password = $_POST['password'];
-    $con = mysqli_connect("localhost","root","1343","todo");
+    $con = mysqli_connect("localhost","root"," ","todo");
     $sqlcheck = "select * from users where loginid='$loginid'";
     $resultcheck = mysqli_query($con,$sqlcheck);
     if(mysqli_num_rows($resultcheck) == 0){

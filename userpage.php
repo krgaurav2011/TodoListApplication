@@ -5,7 +5,7 @@
 session_start();
 if(isset($_SESSION['loginid'])){
     $loginid = $_SESSION['loginid'];
-    $con = mysqli_connect("localhost","root","1343","todo");
+    $con = mysqli_connect("localhost","root"," ","todo");
     $sql = "SELECT * FROM list WHERE loginid = '$loginid' ";
     $result = mysqli_query($con,$sql);
     $count=0;
